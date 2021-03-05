@@ -1,5 +1,5 @@
 # **Traffic Sign Recognition**
-
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 ## README
 ---
 This is the repo of Traffic sign recognition project of Udacity Self-driving Car Nano degree, original repo can be found [here](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project)

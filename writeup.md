@@ -1,7 +1,8 @@
 # **Traffic Sign Recognition**
 
-## Writeup
+## README
 ---
+This is the repo of Traffic sign recognition project of Udacity Self-driving Car Nano degree, original repo can be found [here](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project)
 
 **Build a Traffic Sign Recognition Project**
 
@@ -18,7 +19,7 @@ The goals / steps of this project are the following:
 
 [image1]: ./results/train_data_visualization.jpg "Visualization"
 [image2]: ./results/grayscale.jpg "Grayscaling"
-[image3]: ./results/histo_equ.jpg "Histrogram equalization"
+[image3]: ./results/histo_equ.jpg "Hitrogram equalization"
 [image4]: ./web_images/img01.jpg "Traffic Sign 1"
 [image5]: ./web_images/img02.jpg "Traffic Sign 2"
 [image6]: ./web_images/img03.jpg "Traffic Sign 3"
@@ -40,22 +41,21 @@ The goals / steps of this project are the following:
 [image23]: ./results/feature_map11.jpg "image 1 conv1 feature map"
 [image24]: ./results/image_for_fmap2.jpg "Orignal image 2 for feature map"
 [image25]: ./results/feature_map21.jpg "image 2 conv1 feature map"
-## Rubric Points
-### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
+<!-- ## Rubric Points
+### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.   -->
 
 ---
-### Writeup / README
+<!-- ### Writeup / README -->
 
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
-
-You're reading it! and here is a link to my [project code](https://github.com/kaoozhi/CarND-Traffic-Sign-Classifier-Project/blob/main/Traffic_Sign_Classifier.ipynb)
+<!-- #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code. -->
+Here is a link to my [project code](https://github.com/kaoozhi/CarND-Traffic-Sign-Classifier-Project/blob/main/Traffic_Sign_Classifier.ipynb)
 
 ### Data Set Summary & Exploration
 
-#### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
-
+#### 1. Summary of the data set:
+<!--
 I used the pandas library to calculate summary statistics of the traffic
-signs data set:
+signs data set: -->
 
 * The size of training set is 34799
 * The size of the validation set is 4410
@@ -63,7 +63,7 @@ signs data set:
 * The shape of a traffic sign image is (32,32,3)
 * The number of unique classes/labels in the data set is 43
 
-#### 2. Include an exploratory visualization of the dataset.
+#### 2. Exploratory visualization of the dataset.
 
 Here is an exploratory visualization of the data set. It is a bar chart showing number of images of each class in the training dataset. I noticed that the distribution of classes is quiet unbalanced. Several classes have more than 700 examples (ex. speed limit (50km/h), speed limit (30km/h), yield...) where several have less than 100 examples (ex. Dangerous curve to the left, End of no passing, Speed limit (20km/h)).
 
@@ -160,7 +160,7 @@ Here are ten German traffic signs that I found on the web:
 
 The images are all taken in good light conditions with a normal contrast level. Those images also have a good sharpness. The 5th image with a "Dangerous to turn right" sign slightly rotated. The 7th image "Slippery road" with watermark which may introduce undesired bias for the model to predict correctly.
 
-#### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set.
+#### 2. Predictions on these new traffic signs
 <!-- At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric). -->
 
 Here are the results of the prediction:
@@ -169,7 +169,7 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 10 of the 10 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 95.4%
 
-#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction.
+#### 3. Softmax probabilities analysis
 <!-- Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts) -->
 
 The code for making predictions on my final model is located in the line #208 of the Ipython notebook.
@@ -202,8 +202,8 @@ The model's certainty about "Double curve" sign and "Speed limit (20km/h)" sign 
 |0	|Speed limit (20km/h)	|0.674699	|0.933333
 
 Further work on image preprocessing and model architecture is still needed to improve model's generalization ability about those classes.
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-#### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+### Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
+#### 1. Visual output of network's feature maps.
 The model has a high precision and recall score for the "Speed limit(30km/h)" sign.
 Here are feature map visualization of the first convolution layer output of two "Speed limit(30km/h)" samples
 
